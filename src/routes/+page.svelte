@@ -178,7 +178,7 @@
 		currentTime.set(dayjs().format('HH:mm'));
 
 		// debug
-		let selectedDate = dayjs().format('YYYY-MM-DD');
+		// let selectedDate = dayjs().format('YYYY-MM-DD');
 
 		const dayStart = dayjs(`${selectedDate} 15:00`, 'YYYY-MM-DD HH:mm');
 		const dayEnd = dayjs(`${selectedDate} 23:59`, 'YYYY-MM-DD HH:mm').add(1, 'minute');
