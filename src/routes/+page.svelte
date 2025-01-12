@@ -197,6 +197,13 @@
 	}
 </script>
 
+<svelte:head>
+	<title>EDC Thailand 2025</title>
+	<meta name="description" content="Electric Daisy Carnival Thailand 2025 lineup and schedule" />
+	<meta name="keywords" content="EDC, Thailand, 2025, Lineup" />
+	<meta property="og:image" content="/edth_2025.jpg" />
+</svelte:head>
+
 <!-- openDialog -->
 {#if $openDialog.value}
 	<Dialog.Root
