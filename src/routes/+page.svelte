@@ -178,7 +178,7 @@
 		currentTime.set(dayjs().format('HH:mm'));
 
 		// debug
-		// let selectedDate = dayjs().format('YYYY-MM-DD');
+		let selectedDate = dayjs().format('YYYY-MM-DD');
 
 		const dayStart = dayjs(`${selectedDate} 15:00`, 'YYYY-MM-DD HH:mm');
 		const dayEnd = dayjs(`${selectedDate} 23:59`, 'YYYY-MM-DD HH:mm').add(1, 'minute');
@@ -307,7 +307,7 @@
 							<PaneResizer class="relative flex h-2 items-center justify-center" disabled>
 								<div class="absolute left-0 h-1 w-[96.6vw] bg-red-500">
 									<div
-										class="absolute left-0 top-0 flex h-5 w-14 items-center justify-center bg-red-500 text-xs text-white"
+										class="absolute left-0 top-0 flex h-5 w-14 items-center justify-center bg-red-500 text-xs text-white font-bold"
 									>
 										{$currentTime}
 									</div>
@@ -320,11 +320,11 @@
 				</div>
 				<div class="rounded-sm bg-[var(--edc-primary)]">
 					{#each timeSlots as slot (slot)}
-						<div class="flex h-20 w-14 justify-center p-2 text-xs text-white">
+						<div class="flex h-20 w-14 justify-center p-2 text-xs text-white font-bold">
 							{slot}
 						</div>
 					{/each}
-					<div class="flex h-20 w-14 items-center justify-center p-2 text-xs text-white">End</div>
+					<div class="flex h-20 w-14 items-center justify-center p-2 text-xs text-white font-bold">End</div>
 				</div>
 			</div>
 

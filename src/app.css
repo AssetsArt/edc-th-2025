@@ -80,6 +80,14 @@
   }
 }
 
+
+/* Custom CSS */
+html, body {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .timeline-wrapper {
   /* border: solid 2px #6366f1; */
   /* border-radius: 10px; */
