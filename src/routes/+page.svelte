@@ -58,7 +58,7 @@
 
 	// hooks
 	$effect.root(() => {
-		fetch('/lineup.json').then(async (res) => {
+		fetch('https://raw.githubusercontent.com/AssetsArt/edc-th-2025/refs/heads/main/static/lineup.json').then(async (res) => {
 			const data = await res.json();
 			lineups.set(data);
 			// console.log(data);
