@@ -298,7 +298,7 @@
 				<Tabs.List>
 					{#each days as day, index (day)}
 						<Tabs.Trigger value={`${index}`}>
-							{dayjs(day).format('dddd, MMM DD')}
+							{dayjs(day).format('MMM DD')}
 						</Tabs.Trigger>
 					{/each}
 				</Tabs.List>
