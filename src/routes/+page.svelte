@@ -39,7 +39,7 @@
 	let currentTime = writable(dayjs().format('HH:mm'));
 	let currentLivePosition = writable(0);
 	let pins = writable<string[]>([]);
-	let pinWorld = [
+	let pinWord = [
 		'Turn It Up!',
 		'Feel the Beat!',
 		'Party On!',
@@ -379,7 +379,7 @@
 									{#if $pins.includes(performance.artist)}
 										<div class="flex items-center justify-between">
 											<div class="rounded-sm bg-[var(--edc-red)] p-1 text-xs text-white">
-												{pinWorld[Math.floor(Math.random() * pinWorld.length)]}
+												{pinWord[Math.floor(Math.random() * pinWord.length)]}
 											</div>
 										</div>
 									{/if}
